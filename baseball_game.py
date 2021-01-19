@@ -285,6 +285,9 @@ def main():
             print('Wrong Input, Input again')
             continue
         
+        strikes, ball = get_strikes_or_ball(user_input, random_number)
+        print(f'Strikes : {strikes}, Balls : {ball}')
+
         if user_input == random_number :
             chk = True
             while chk :
@@ -299,9 +302,6 @@ def main():
                 else :
                     print('Wrong Input, Input again')
             if not chk : break    
-        else :
-            strikes, ball = get_strikes_or_ball(user_input, random_number)
-            print(f'Strikes : {strikes}, Balls : {ball}')
     # ==================================
     print("Thank you for using this program")
     print("End of the Game")
